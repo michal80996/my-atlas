@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDVWsELuKgtQrjF-kAGFkuZjJxRSyU_NzD-g&usqp=CAU" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Atlas</title>
+    <!-- scripts -->
+    <script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script type="module" src="js_maps/appMaps.js" defer></script>
+
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid row">
+                <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-items-center col-lg-10" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 70px;">
+                        <li class="nav-item">
+                            <a id="id_home" class="nav-link btn-outline-secondary" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="id_usa" class="nav-link btn-outline-secondary" aria-current="page" href="#">UNITED
+                                STATES</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="id_israel" class="nav-link btn-outline-secondary" aria-current="page"
+                                href="#">ISRAEL</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="id_thailand" class="nav-link btn-outline-secondary" aria-current="page"
+                                href="#">THAILAND</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="id_france" class="nav-link btn-outline-secondary" aria-current="page"
+                                href="#">FRANCE</a>
+                        </li>
+
+                    </ul>
+
+                    <form id="id_form" class="d-flex col-7">
+                        <input id="id_input" class="form-control me-2" type="search" placeholder="Type here..."
+                            aria-label="Search">
+                        <button id="id_btnSearch" class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="col-lg-1 col-4">
+                    <a class="nav-link link-light dropdown-toggle btn-outline-dark" href="#"
+                        id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        All Countries
+                    </a>
+                    <ul id="id_allCountries" class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container content">
+        <div id="id_notFound" class="container text-center mt-4">
+            <img class="w-50"
+                src="https://media.istockphoto.com/id/155597883/photo/error-message.jpg?s=1024x1024&w=is&k=20&c=APjhO7yi6cnJ7s_SOKSEGxmyklrbBwUjxLhFXDJVIkQ="
+                alt="">
+        </div>
+        <div class="cardCountry">
+
+        </div>
+
+        <!-- <div class="baseCard row row-cols-1 row-cols-md-3 g-4"> -->
+        <!-- <div class="col">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div> -->
+        <!-- </div> -->
+    </main>
+
+
+    <footer class=" ">
+        <div class="container mt-2  d-md-flex justify-content-around">
+            <h5><i class="fa fa-copyright pt-4 " aria-hidden="true"></i>2023 Michal Shunem Halevy</h5>
+            <div>
+                <div class="links display-5 py-1 px-5 me-5">
+                    <a href="https://github.com"><i class="fa fa-github p-2" aria-hidden="true" target="_blank"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square  p-2"
+                            aria-hidden="true"></i></a>
+                    <a href="https://api.whatsapp.com"><i class="fa fa-whatsapp  p-2" aria-hidden="true"
+                            target="_blank"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

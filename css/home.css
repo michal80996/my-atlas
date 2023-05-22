@@ -1,0 +1,86 @@
+body {
+    background-image: url("https://images.pexels.com/photos/8828391/pexels-photo-8828391.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: rgba(7, 7, 7, 0.781);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;
+    box-shadow: 0px 7px 10px -1px rgba(0, 0, 0, 0.75);
+
+}
+
+.nav-item a {
+    color: aliceblue;
+
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: 70%;
+
+}
+
+#id_allCountries {
+    max-height: 200px;
+    overflow: scroll;
+    width: 30%;
+    background-color: rgba(240, 248, 255, 0.836);
+}
+
+.content {
+    min-height: calc(100% - 100px);
+    padding-left: 0;
+    margin-top: 3%;
+    min-height: 78vh;
+}
+
+.moreInfo {
+    background-color: aliceblue;
+}
+
+.cardCountry :hover {
+    transition: scale(1.1) 2s;
+}
+
+footer {
+    background-color: rgba(7, 7, 7, 0.879);
+    left: 0;
+    right: 0;
+    z-index: 90;
+    color: aliceblue;
+}
+
+@media (max-width: 576px) {
+    #id_allCountries {
+        right: 0;
+        width: 90%;
+        max-height: 150px;
+
+    }
+
+    .dropdown-menu[data-bs-popper] {
+        left: 10%;
+    }
+
+    #singlCard {
+        width: 90%;
+    }
+
+    .cardCountry {
+        width: 85%;
+        padding-left: 15%;
+        margin-left: 20px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
